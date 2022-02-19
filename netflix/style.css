@@ -1,0 +1,72 @@
+@charset "UTF-8";
+
+*{
+    padding: 0px;
+    margin:0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    width: 1200px;
+}
+div{
+    display: inline-block;
+}
+section header {
+    height: 80px;
+    background-color: transparent;
+    color: white;
+    text-align: left;
+}
+
+
+section header div#caixa-direita {
+    left: 820px;
+    position: relative;
+}
+
+header h1 {
+    color: red;
+    font-size: 2em;
+}
+
+header button {
+    height: 35px;
+    width: 95px;
+    border-radius: 5px;
+    background-color: rgb(233, 0, 0);
+    color: white;
+    
+}
+
+button:hover{
+    background-color: rgb(255, 0, 0);
+}
+select {
+    height: 35px;
+    background-color: transparent;
+    color: white;
+    width: 125px;
+    text-align: center;
+    margin-right: 15px;
+}
+
+select:hover {
+    background-color: rgba(189, 178, 178, 0.541);
+}
+
+
+select option {
+    background-color: rgb(180, 177, 177);
+}
+
+.secao {
+    height: 100vh;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+.secao1 {
+    background-image: url(imagens/bg-gd.jpg);
+}

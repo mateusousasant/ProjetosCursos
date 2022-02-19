@@ -1,0 +1,171 @@
+@charset "UTF-8";
+
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    max-width: 1200px;
+    margin: auto;
+    
+}
+
+.cor {
+    background-image: linear-gradient(#FD8757, #FE7254, #FD5B58);
+    box-shadow: 0px 10px 5px #FD8757;
+    margin-bottom: 1px;
+}
+
+header {
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 25px;
+    padding-top: 10px;
+    position: sticky;
+    top:0;
+}
+
+header #logo {
+    padding-left: 15px;
+}
+
+header nav ul {
+    list-style: none;
+}
+ul {
+    display: flex;
+    flex-direction: row;
+}
+
+header nav ul li {
+    padding: 10px;
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+    transition: 0.5s;
+}
+header a:hover {
+    color:#FD8757;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.sec_cor {
+    display: flex;
+    flex-direction: row;
+    height: 97vh;
+}
+
+.sec_cor .sec_cor_desc {
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.sec_cor_desc h1 {
+    font-size: 2.4vw;
+}
+
+.sec_cor_desc p {
+    padding: 25px 0;
+}
+
+.botao_download {
+    display: flex;
+    width: 25vw;
+    justify-content: space-around;
+}
+
+.botao_download a{
+    text-decoration: none;
+}
+
+.botao_download div {
+    padding: 15px;
+    background-color: #2E3B48;
+    color: rgb(218, 216, 216);
+    border-radius: 50px;
+    width: 10vw;
+    text-align: center;
+    font-weight: bolder;
+}
+
+.imagem > img{
+    flex:1;
+    height: 600px;
+}
+
+.coments {
+    background-color: #2E3B48;
+    max-height: 250px;
+    display: flex;
+    box-shadow: 0px 5px 5px #2E3B48;
+    color: rgb(202, 190, 190);
+}
+
+.coments > div {
+    padding: 30px;
+}
+
+.coments > div > p {
+    padding-top: 5px;
+    text-align: justify;
+}
+
+
+.coments .coment img {
+    width: 150px;
+}
+
+.sec_gray {
+    display: flex;
+    justify-content: center;
+    background-color: #45515D;
+
+}
+
+.espec_left,
+.espec_rigth {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+    top: 30px;
+}
+
+.espec_left {
+    left: 200px;
+}
+
+.espec_rigth {
+    right: 200px;
+}
+
+.espec_left > p,
+.espec_rigth > p {
+    margin: 55px;
+}
+
+.sec_midia {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sec_midia h1, p{
+    text-align: center;
+    padding-top: 25px;
+}

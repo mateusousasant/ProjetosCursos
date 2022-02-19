@@ -1,0 +1,133 @@
+@charset "UTF-8";
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #E9EBF2;
+    color: #464343;
+}
+
+.container {
+    max-width: 1000px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 15px;
+    margin: auto;
+}
+
+header {
+    border-bottom: 1px solid #464343;
+    box-shadow: 0px 5px 3px #464343;
+    background-color: #666973;
+    color:black
+}
+
+header h1 {
+    font-size: 4vw;
+    font-weight: bold;
+    padding: 10px;
+
+}
+
+header h2 {
+    font-size: 2.5vw;
+    padding-bottom: 15px;
+}
+
+header p {
+    font-size: 1.2vw;
+    font-weight: 300;
+    padding-bottom: 5px;
+}
+
+.perfil {
+    border: 1px solid black;
+    background-color: aliceblue;
+    text-align: center;
+    padding: 5px;
+}
+.perfil img {
+    width: 300px;
+    background-size: cover;
+}
+
+.sec_bio {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    box-shadow: 0px 0px 8px black;
+    margin-top: 25px;
+}
+
+.bio_tittle {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    text-align: center;
+}
+
+.bio_desc {
+    text-align: justify;
+}
+
+.sec_timeline{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    box-shadow: 0px 0px 8px black;
+    margin-top: 25px;
+    padding-top: 5px;
+    display: flex;
+    flex-direction: row;
+}
+
+.disc_left,
+.disc_rigth {
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.grupo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+.disc_left > .disc_ano { 
+    margin-left: 5px;
+}
+
+.disc_rigth > .disc_ano { 
+    margin-right: 5px;
+}
+
+.line_center {
+    display: flex;
+    align-items: center;
+}
+.line_center > div {
+    height: 85%;
+    width: 3px;
+    background-color: #0D0D0D;
+}
+
+
+.disc_ano {
+    display: inline-block;
+    padding: 3px;
+    background-color: #666973;
+}
+
+footer {
+    padding: 5px;
+    text-align: center;
+}
+footer a {
+    text-decoration: none;
+    font-weight: bolder;
+    color: black;
+}

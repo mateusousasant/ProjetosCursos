@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Cadastro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <form action="https://bandodados.html" method="get">
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+
+            <label for="nome">Nome:</label>
+            <input placeholder="Nome" id="nome" type="text" name="Nome" required>
+
+            <label for="sobre">Sobrenome:</label>
+            <input required placeholder="Sobrenome" type="text" name="sobre" id="sobre">
+
+            <label for="sexo">Sexo: </label>
+            <select required name="Sexo" id="sexo">
+                <option style="display:none" value="null"> </option>
+                <option value="Masc">Masculino</option>
+                <option value="Fem">Feminino</option>
+            </select>
+        </fieldset>
+        
+        <fieldset>
+            <legend>Dados Profissionais</legend>
+
+            <label for="profi">Profissão:</label>
+            <input placeholder="Profissão" id="profi" type="text">
+
+            
+
+        </fieldset>
+
+        Eu aceito os <a id="termo" href="#">termos e condições</a>
+        <input required type="radio" name="temro" id="termo">
+        <br>
+        <input type="submit" value="Enviar">
+    </form>
+    
+</body>
+</html>

@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+
+form {
+    width: 450px;
+    height: 350px;
+    border: 1px solid gray;
+    box-shadow: 1px 1px 1px gray;
+    padding: 15px;
+    background-color: rgb(33, 167, 201);
+    color: white;
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+}
+
+fieldset label,
+input {
+    width: 35%;
+}
+
+fieldset select {
+    width: 100px;
+}
+
+#termo {
+    width: auto;
+}
+
