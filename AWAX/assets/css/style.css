@@ -523,9 +523,11 @@ margin: 5px;
     background-color: #b28756;
 }
 
+/*Company*/
+
 .section-company {
     display: flex;
-    justify-content:space-around;
+    justify-content:space-evenly;
     align-items: center;
 }
 
@@ -533,6 +535,8 @@ margin: 5px;
     width: 60px;
     height: auto;
 }
+
+/*Price area*/
 
 .price-area {
     display: flex;
@@ -579,3 +583,332 @@ margin: 5px;
     background-color: black;
 }
 
+
+/*section Premium*/
+
+.premium {
+    height: calc(100vh - 100px);
+    overflow: hidden;
+}
+
+.premium .sliders {
+    width: 1000vw;    
+}
+
+.premium .slide {
+    width: 80%;
+    height: 100%;
+    
+}
+
+.premium .slidearea {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    color: white;
+    justify-content: center;
+}
+
+.premium .slide_pointers {
+    width: 100%;
+    height: 20px;
+    position: absolute;
+    margin-top: -50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.premium .pointer {
+    height: 15px;
+    width: 15px;
+    border: 1px solid #b28756;
+    cursor: pointer;
+    border-radius: 8px;
+    margin-left: 5px;
+    margin-right: 5px;
+
+}
+
+.premium .pointer.active {
+    background-color: #b28756;
+}
+
+
+.section-premium--area1 {
+    background-color: red;
+    flex:1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.section-premium--area1 img {
+    width: 250px;
+}
+
+.section-premium--area2 {
+    background-color: green;
+    height: inherit;
+    justify-content:space-evenly;
+    align-items: center;
+    width: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.section-premium--area2 img {
+    width: 25px;
+}
+
+
+.section-premium--area3 {
+    background-color: red;
+    flex:1;
+}
+
+
+/* SOME FACTS */
+
+
+.section_somefacts{
+    display: flex;
+}
+
+
+.section_somefact {
+    flex:1;
+    text-align: center;
+    padding: 10px;
+}
+
+.section_somefact h1 {
+    font-weight: 800;
+    font-size: 40px;
+    color: #b28756;
+}
+
+.section_somefact h4 {
+    padding-top: 20px;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+.section_somefact p {
+    padding-top: 10px;
+    font-size: 13px;
+    color:#999;
+}
+
+/* Social */
+
+
+.section-social {
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+}
+
+.section-social--share {
+    display: flex;
+}
+
+.section-social--share p {
+    text-transform: uppercase;
+    color: #CCC;
+    font-weight: 700;
+    padding-left: 20px;
+    text-align: center;
+}
+
+.section-social--icons {
+    display: flex;
+}
+
+.section-social--icons .section-social--icon {
+    display: flex;
+    padding-left: 30px;
+    
+}
+
+.section-social--icons .section-social--icon .img {
+    padding: 8px;
+    border-radius: 50%;    
+
+}
+
+.twitter {
+    background-color: rgb(106, 200, 231);
+}
+.linkedin {
+    background-color: rgb(77, 77, 212);
+}
+
+.facebook {
+    background-color: rgb(6, 6, 158);
+}
+
+.googleplus {
+    background-color: rgb(243, 57, 11);
+
+}
+
+.pinterest {
+    background-color: rgb(170, 6, 6);
+}
+.section-social--icons .section-social--icon p {
+    color: #CCC;
+    padding-left: 5px;
+    display: flex;
+    align-items: center;
+}
+
+/*Contact Form*/
+.section-contactus {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 450px;
+}
+.dados {
+    width: 100%;
+    display: flex;
+    gap: 50px;
+    padding-bottom: 40px;
+    justify-content: space-between;
+}
+.dados input{
+    flex:1;
+}
+
+.dados input,
+form input {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    background-color: transparent;
+    outline: none;
+    border-bottom-color: #CCC;
+}
+
+.dados input[placeholder],
+form input[placeholder] {
+    padding-bottom: 10px;
+}
+
+#subject, 
+#message {
+    width: 100%;
+}
+
+#message {
+    padding-top: 80px;
+}
+
+.section-contactus form a {
+    margin-top: 55px;
+}
+
+/*Area Map*/
+
+.section-video iframe {
+    width: 100%;
+    height: 350px;
+}
+
+/*Up Button*/
+
+footer .radius {
+    display: inline-block;
+    background-color: #b28756;
+    color: white;
+    text-transform: uppercase;
+    font-size: 55px;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 80%;
+    padding: 3px 15px;
+    position: absolute;
+    top: -35px
+}
+
+/*area footer*/
+
+footer {
+    background-color: black;
+    color: #CCC;
+    padding: 15px;
+    position: relative;
+}
+
+.footer-area {
+    max-width: 1140px;
+    margin: auto;
+    display: flex;
+    padding: 10px;
+
+}
+.footer-area .area-social,
+.footer-area .area-desc,
+.footer-area .area-sub {
+    flex:1;
+}
+
+.area-social {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.social img {
+    background-color: #555;
+    border-radius: 15px;
+    padding: 7px;
+    margin-right: 10px;
+
+}
+
+
+.area-sub {
+    flex:1;
+}
+
+.area-sub div {
+    background-color:#555;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    margin: auto;
+    height: 100%;
+    
+    
+}
+
+.area-sub input {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    background-color: transparent;
+    outline: none;
+    border-bottom-color: #CCC;
+    width: 190px;
+    margin-top: 50px;
+}
+
+.area-sub a {
+    margin-bottom: 50px;
+}
+.area-sub input[placeholder] {
+    padding-bottom: 10px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #CCC;
+}
