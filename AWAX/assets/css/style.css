@@ -33,6 +33,11 @@ header {
     padding-left: 15px;
 }
 
+.menu-opener {
+    display: none;
+}
+
+
 .menu a {
     text-decoration: none;
     color: white;
@@ -911,4 +916,145 @@ footer {
     text-transform: uppercase;
     text-align: center;
     color: #CCC;
+}
+
+
+
+/* area media queries */
+
+@media (min-width: 450px) and (max-width: 800px) {
+
+    .menu-opener {
+        display: block;
+        width: 35px;
+        margin-right: 30px;
+    }
+    .menu nav {
+        display: none;
+    }
+    nav {
+        position: absolute;
+        z-index: 99;
+        background-color: rgba(0, 0, 0, 0.9);
+        width: 70vw;
+        height: calc(100vh - 100px);
+        top: 100px;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav a {
+        font-weight: bold;
+        height: 10px;
+        font-size: 27px;
+        margin-right: 50px;
+        border: 0;
+        padding-bottom: 5px;     
+    }
+
+    .menu nav a:hover,
+    .menu .active{
+        border:0;
+    }
+
+/*Section do About Us */
+.section-aboutus {
+    flex-direction: column;
+}
+
+.section-aboutus--left {
+    margin: 0px 30px 30px 30px;
+}
+.section-aboutus--right {
+    width: auto;
+}
+/* fim About ut*/
+
+/*services*/
+
+.section_services{
+    flex-wrap: wrap;
+}
+.section_service {
+    min-width: 50%;
+    margin-bottom: 30px;
+}
+/*fim services*/
+
+/*section team*/
+
+.section-team {
+    max-width: 580px;
+}
+/*fim team*/
+
+}
+
+/*media phone*/
+@media (max-width: 450px) {
+
+    .menu-opener {
+        display: block;
+        width: 35px;
+        margin-right: 30px;
+    }
+
+    nav {
+        position: absolute;
+        z-index: 99;
+        background-color: rgba(0, 0, 0, 0.9);
+        width: 70vw;
+        height: calc(100vh - 100px);
+        top: 100px;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav a {
+        font-weight: bold;
+        height: 10px;
+        font-size: 27px;
+        margin-right: 50px;
+        border: 0;
+        padding-bottom: 5px;     
+    }
+
+    .menu nav a:hover,
+    .menu .active{
+        border:0;
+    }
+
+/*Section do About Us */
+.section-aboutus {
+    flex-direction: column;
+}
+
+.section-aboutus--left {
+    margin: 0px 30px 30px 30px;
+}
+.section-aboutus--right {
+    width: auto;
+}
+/* fim About ut*/
+
+/*services*/
+
+.section_services{
+    flex-wrap: wrap;
+}
+.section_service {
+    min-width: 50%;
+    margin-bottom: 30px;
+}
+/*fim services*/
+
+/*section team*/
+
+.section-team {
+    max-width: 580px;
+}
+/*fim team*/
+
 }
